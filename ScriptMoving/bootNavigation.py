@@ -16,7 +16,7 @@ with open(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__
 def bootNavigation():
     osu = subprocess.Popen([pathToOsuExe])
     tosu = subprocess.Popen([os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "Tosu\\tosu.exe")])
-    time.sleep(12)
+    time.sleep(15)
 
     AllWindows = pyautogui.getAllWindows()
     osuWindow = [AllWindows[i] for i in range(len(AllWindows)) if AllWindows[i].title == "osu!"][0]
